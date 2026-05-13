@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <article class="page">
+    <section class="hero">
+      <div class="title-row">
+        <span class="eyebrow">QR Maker</span>
+        <h1>Generate clean, scannable QR codes in seconds.</h1>
+      </div>
+      <p class="subtitle">Paste a link, message, or contact details, then create a QR code instantly. The result is ready to scan or download as a crisp PNG file.</p>
+    </section>
+
+    <section class="content">
+      <div class="panel">
+        <div class="field-row">
+          <label for="text">Link or message</label>
+          <textarea id="text" placeholder="Enter a website address or text to encode"></textarea>
+        </div>
+
+        <div class="field-row">
+          <label for="size">QR size <span id="sizeValue">200</span>px</label>
+          <input id="size" type="range" min="100" max="300" value="200" />
+        </div>
+
+        <div class="actions">
+          <button id="generate" type="button">Create QR</button>
+          <a id="download" class="download-link hidden" download="qr-code.png">Download PNG</a>
+        </div>
+
+        <p id="error" class="error"></p>
+        <p class="helper">Use the slider to adjust the QR image size. The code will update automatically once generated.</p>
+      </div>
+
+      <div class="panel preview-panel">
+        <p class="preview-label">QR preview</p>
+        <div id="qrcode" aria-label="QR code output"></div>
+        <p class="footer-note">Scan with your camera app or QR reader. No external server required.</p>
+      </div>
+    </section>
+  </article>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+  <script src="script.js"> 
+  </script>
+</body>
+</html>
