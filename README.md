@@ -20,7 +20,9 @@ A simple, mobile-friendly QR code generator built as a static web page. Enter te
 
 ## Files
 
-- `index.html` — Main application page and UI
+- `index.html` — Main application page.
+- `style.css` — UI.
+- `script.js` — Application Logic.
 
 ## Notes
 
