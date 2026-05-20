@@ -2,8 +2,8 @@
 
 A simple, mobile-friendly QR code generator built as a static web page. Enter text or a URL, generate a scannable QR code, and download it as a PNG image.
 
-## Live Demo
-https://dhruvil7582.github.io/Qr-Code-Generater/
+## 🚀Live Demo
+[Click Here to check out the website!](https://dhruvil7582.github.io/Qr-Code-Generater/)
 
 ## Features
 
